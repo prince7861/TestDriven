@@ -3,7 +3,11 @@ package org.incubyte;
 public class StringCalculator {
 
     public int add(String numbers) {
+        int counter;
         String[] num1=numbers.split(",");
+        counter= num1.length;
+        System.out.println("Counter for unknown amount numbers"+counter);
+
 
         if (isEmpty(numbers)) {
             return 0;
@@ -31,4 +35,5 @@ public class StringCalculator {
     {
         return numbers.isEmpty();
     }
+
 }
