@@ -30,7 +30,7 @@ public class TestStringCalculator {
     }
     public void allowunknownamt()
     {
-        assertEquals(sc.add("2,3,4,5,6,7,8,9"),0);
+        assertEquals(sc.add("1,2,3,4,5,6,7,8,9"),45);
     }
 
 }
