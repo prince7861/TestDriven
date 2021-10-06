@@ -19,10 +19,18 @@ public class TestStringCalculator {
     {
         assertEquals(sc.add(""),0);
     }
-/*
+
+    public void singleValueToAdd()
+    {
+        assertEquals(sc.add("1"),1);
+    }
+    public void addTwoNumsByComma()
+    {
+        assertEquals(sc.add("1,2"),3);
+    }
     public void allowunknownamt()
     {
         assertEquals(sc.add(""),0);
     }
-    */
+
 }
