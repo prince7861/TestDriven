@@ -2,7 +2,7 @@ package org.incubyte;
 
 public class StringCalculator {
 
-    private final String delimiter=",|\n|/|;|//";
+    private final String delimiter=",|\n";
     public int add(String numbers) {
 
         String[] splitArr = numbers.split(delimiter);
@@ -23,7 +23,7 @@ public class StringCalculator {
     }
 private int getSumarr(String sum)
 {
-    String[] splitArr = sum.split(",|\n");
+    String[] splitArr = sum.split(delimiter);
 
     int[]arr=new int[splitArr.length];
     for (int i=0;i<splitArr.length;i++)

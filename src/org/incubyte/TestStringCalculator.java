@@ -36,5 +36,16 @@ public class TestStringCalculator {
     {
     assertEquals(sc.add("1\n2,3"),6);
     }
+    public void multipleDelimiterSum()
+    {
+        assertEquals(sc.add("1,2\n"),3);
+    }
+
+
+    @Test(expectedExceptions = Exception.class)
+    public void negativeInputReturnsException()
+    {
+        sc.add("-1");
+    }
 
 }
