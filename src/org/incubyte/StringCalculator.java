@@ -2,9 +2,10 @@ package org.incubyte;
 
 public class StringCalculator {
 
+    private final String delimiter=",|\n|/|;|//";
     public int add(String numbers) {
 
-        String[] splitArr = numbers.split(",");
+        String[] splitArr = numbers.split(delimiter);
 
         int[]arr=new int[splitArr.length];
 
