@@ -1,0 +1,10 @@
+<component name="libraryTable">
+  <library name="testng-7.4.0">
+    <CLASSES>
+      <root url="jar://C:/Drivers/testng-7.4.0.jar!/" />
+      <root url="jar://C:/Drivers/jcommander-1.78.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>
