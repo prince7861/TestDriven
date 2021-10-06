@@ -4,7 +4,6 @@ public class StringCalculator {
 
     public int add(String numbers) {
 
-       // String[] num1 = numbers.split(",");
         String[] splitArr = numbers.split(",");
 
         int[]arr=new int[splitArr.length];
@@ -18,13 +17,12 @@ public class StringCalculator {
         else {
             //return getSum(num1[0], num1[1]);
             int total= getSumarr(numbers);
-                System.out.println(total);
                 return total;
         }
     }
 private int getSumarr(String sum)
 {
-    String[] splitArr = sum.split(",");
+    String[] splitArr = sum.split(",|\n");
 
     int[]arr=new int[splitArr.length];
     for (int i=0;i<splitArr.length;i++)
@@ -36,7 +34,6 @@ private int getSumarr(String sum)
     for (int i:arr) {
         total=total+i;
     }
-    System.out.println(total);
     return total;
 }
  /*  private int getSum(String numA, String numB)

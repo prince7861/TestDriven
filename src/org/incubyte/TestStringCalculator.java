@@ -28,9 +28,13 @@ public class TestStringCalculator {
     {
         assertEquals(sc.add("1,2"),3);
     }
-    public void allowunknownamt()
+    public void allowUnknownAmtNos()
     {
         assertEquals(sc.add("1,2,3,4,5,6,7,8,9"),45);
+    }
+    public void newLineDelimiterSum()
+    {
+    assertEquals(sc.add("1\n2,3"),6);
     }
 
 }
