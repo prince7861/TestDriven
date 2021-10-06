@@ -43,7 +43,7 @@
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="settings.editor.selected.configurable" value="org.jetbrains.plugins.github.ui.GithubSettingsConfigurable" />
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="TestNG.TestStringCalculator">
     <configuration name="TestStringCalculator" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="Test_incubyte" />
       <extension name="coverage">
@@ -61,9 +61,28 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="TestStringCalculator.emptyStringReturnsZero" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="Test_incubyte" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.incubyte.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="org.incubyte" />
+      <option name="MAIN_CLASS_NAME" value="org.incubyte.TestStringCalculator" />
+      <option name="METHOD_NAME" value="emptyStringReturnsZero" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
         <item itemvalue="TestNG.TestStringCalculator" />
+        <item itemvalue="TestNG.TestStringCalculator.emptyStringReturnsZero" />
       </list>
     </recent_temporary>
   </component>
@@ -75,7 +94,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1633536612099</updated>
-      <workItem from="1633536615543" duration="2613000" />
+      <workItem from="1633536615543" duration="5091000" />
     </task>
     <servers />
   </component>
