@@ -3,12 +3,9 @@ package org.incubyte;
 public class StringCalculator {
 
     private final String delimiter=",|\n";
-    public int add(String numbers) {
 
-        String[] splitArr = numbers.split(delimiter);
-
-        int[]arr=new int[splitArr.length];
-
+    public int add(String numbers) throws Exception {
+        String[]strnum=numbers.split(delimiter);
         if (isEmpty(numbers)) {
             return 0;
         }
@@ -17,32 +14,28 @@ public class StringCalculator {
         }
         else {
             //return getSum(num1[0], num1[1]);
-            int total= getSumarr(numbers);
-                return total;
+            return getSumarr(strnum);
+
         }
     }
-private int getSumarr(String sum)
-{
-    String[] splitArr = sum.split(delimiter);
-
-    int[]arr=new int[splitArr.length];
-    for (int i=0;i<splitArr.length;i++)
-    {
-        arr[i]=Integer.parseInt(splitArr[i]);
+private int getSumarr(String[] numbers) throws Exception {
+        nullCheckerException(numbers);
+    int sum=0;
+    for(String curr:numbers)
+         {
+             sum+=convertToInt(curr);
     }
-    int total=0;
-
-    for (int i:arr) {
-        total=total+i;
-    }
-    return total;
+    return sum;
 }
- /*  private int getSum(String numA, String numB)
-    {
-        return Integer.parseInt(numA) +Integer.parseInt(numB);
+    private  void nullCheckerException(String[] numbers) throws Exception {
+        for (String curr:numbers)
+        {
+            if(convertToInt(curr)<0)
+            {
+                throw new Exception("Negative value");
+            }
+        }
     }
-  */
-
     private int convertToInt(String numbers)
     {
         return Integer.parseInt(numbers);

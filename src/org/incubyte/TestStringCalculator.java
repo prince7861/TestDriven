@@ -15,36 +15,29 @@ public class TestStringCalculator {
         sc=new StringCalculator();
     }
 
-    public void emptyStringReturnsZero()
-    {
+    public void emptyStringReturnsZero() throws Exception {
         assertEquals(sc.add(""),0);
     }
 
-    public void singleValueToAdd()
-    {
+    public void singleValueToAdd() throws Exception {
         assertEquals(sc.add("1"),1);
     }
-    public void addTwoNumsByComma()
-    {
+    public void addTwoNumsByComma() throws Exception {
         assertEquals(sc.add("1,2"),3);
     }
-    public void allowUnknownAmtNos()
-    {
+    public void allowUnknownAmtNos() throws Exception {
         assertEquals(sc.add("1,2,3,4,5,6,7,8,9"),45);
     }
-    public void newLineDelimiterSum()
-    {
+    public void newLineDelimiterSum() throws Exception {
     assertEquals(sc.add("1\n2,3"),6);
     }
-    public void multipleDelimiterSum()
-    {
+    public void multipleDelimiterSum() throws Exception {
         assertEquals(sc.add("1,2\n"),3);
     }
 
 
     @Test(expectedExceptions = Exception.class)
-    public void negativeInputReturnsException()
-    {
+    public void negativeInputReturnsException() throws Exception {
         sc.add("-1");
     }
 
