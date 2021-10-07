@@ -5,7 +5,7 @@ public class StringCalculator {
     private final String delimiter=",|\n";
 
     public int add(String numbers) throws Exception {
-        String[]strnum=numbers.split(delimiter);
+        String[]strNum=numbers.split(delimiter);
         if (isEmpty(numbers)) {
             return 0;
         }
@@ -13,12 +13,11 @@ public class StringCalculator {
             return convertToInt(numbers);
         }
         else {
-            //return getSum(num1[0], num1[1]);
-            return getSumarr(strnum);
+            return getSumArr(strNum);
 
         }
     }
-private int getSumarr(String[] numbers) throws Exception {
+private int getSumArr(String[] numbers) throws Exception {
         nullCheckerException(numbers);
     int sum=0;
     for(String curr:numbers)
@@ -32,7 +31,7 @@ private int getSumarr(String[] numbers) throws Exception {
         {
             if(convertToInt(curr)<0)
             {
-                throw new Exception("Negative value");
+                throw new Exception("Negatives not Allowed");
             }
         }
     }

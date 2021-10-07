@@ -38,7 +38,7 @@ public class TestStringCalculator {
 
     @Test(expectedExceptions = Exception.class)
     public void negativeInputReturnsException() throws Exception {
-        sc.add("-1");
+       sc.add("-1");
     }
 
 }
